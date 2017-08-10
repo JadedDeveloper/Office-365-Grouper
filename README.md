@@ -21,6 +21,12 @@ This indexing allows for the application to directly locate the users in a very 
 Once the user has been located in the index, it extracts the line item and builds a new CSV that matches the filtered criteria only.
 Resulting in the ability to group users by office location and or exemption list.
 
+<b>Column Format</b>
+
+The required columns for this utility to work are the following and much proceed in the below order. 
+
+"Identity","User","Access Rights","Name","Alias","Office"
+
 <b>Changes in this version:</b>
 
 -Fixed issue where duplicates would be included in a migration batch.
@@ -42,6 +48,8 @@ Resulting in the ability to group users by office location and or exemption list
 -Updated Application Icon.
 
 <b>Upcoming changes:</b>
+
+-No specific order for columns.
 
 -Ability to filter by more than office and or user alias.
 
