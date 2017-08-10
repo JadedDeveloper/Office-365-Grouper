@@ -24,20 +24,31 @@ Resulting in the ability to group users by office location and or exemption list
 Changes in this version:
 
 -Fixed issue where duplicates would be included in a migration batch.
+
 -Reduced nested loop functionality by implementing indexing.
--Implemented Exemption List instead of static runtime parameters
+
+-Implemented Exemption List instead of static runtime parameters.
+
 -Implemented Office List instead of static runtime parameters.
+
 -Implemented Progress Bar and Phase Indicator.
+
 -Implemented Failsafe logic for start process, removal of exemptions/office on selected, add of exemption/office on selected.
+
 -Implemented right click context menu for quick add/removal of exemptions and office changes.
+
 -Implemented ability to check if office.ini or exempt.ini has changed since the application loaded the file and prompts to reload.
+
 -Updated Application Icon.
 
 Upcoming changes:
 
 -Ability to filter by more than office and or user alias.
+
 -Dynamic arrays to optimize time it takes to process data.
+
 -Implementing Stop/Pause Button.
+
 -Param Strs so that application can me launched with parameters to script/automate functionality.
 
 If you have any other questions or request for updates, let me know and i will try my best to accomodate.
