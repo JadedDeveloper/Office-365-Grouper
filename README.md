@@ -2,7 +2,9 @@
 Office365 Migration Tools - Office 365 Grouper
 
 Previously Updated: 7/26/2017
+
 Last Updated: 8/9/2017
+
 Desc: Updated per github user base request for additional functionality.
 
 The Office365 Grouper utility is utilized to perform grouping of users by aliases gathered from a combination of Get-Mailbox and Get-MailBoxPermissions, the utility groups mailbox permissions by utilizing the alias attribute as a primary key.
