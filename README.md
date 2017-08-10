@@ -1,16 +1,16 @@
 # Office365
-Office365 Migration Tools - Office 365 Grouper
+<b>Office365 Migration Tools - Office 365 Grouper</b>
 
 Previously Updated: 7/26/2017
 
-Last Updated: 8/9/2017
+<b>Last Updated: 8/9/2017</b>
 
 Desc: Updated per github user base request for additional functionality.
 
 The Office365 Grouper utility is utilized to perform grouping of users by aliases gathered from a combination of Get-Mailbox and Get-MailBoxPermissions, the utility groups mailbox permissions by utilizing the alias attribute as a primary key.
 Once the CSV has been loaded into the utility, it is able to loop through the list performing advanced logic to filter the data according to office location and or exemption list via alias.
 
-How does this all work?
+<b>How does this all work?</b>
 
 Office365 Grouper has 2 Phases of operation,
 
@@ -21,7 +21,7 @@ This indexing allows for the application to directly locate the users in a very 
 Once the user has been located in the index, it extracts the line item and builds a new CSV that matches the filtered criteria only.
 Resulting in the ability to group users by office location and or exemption list.
 
-Changes in this version:
+<b>Changes in this version:</b>
 
 -Fixed issue where duplicates would be included in a migration batch.
 
@@ -41,7 +41,7 @@ Changes in this version:
 
 -Updated Application Icon.
 
-Upcoming changes:
+<b>Upcoming changes:</b>
 
 -Ability to filter by more than office and or user alias.
 
