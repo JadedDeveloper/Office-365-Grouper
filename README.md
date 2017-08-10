@@ -27,9 +27,9 @@ The required columns for this utility to work are the following and much proceed
 
 "Identity","User","Access Rights","Name","Alias","Office"
 
-<b>Script to grab the data from Exchange onpremise</b>
+<b>Powershell Script to grab the data from the On Premise Exchange Organization</b>
 
-Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn;
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn; This command may be different for older versions of Exchange.
 Set-AdServerSettings -ViewEntireForest $true
 $mailboxes = Get-Mailbox -ResultSize Unlimited
 foreach ($mailbox in $mailboxes) 
