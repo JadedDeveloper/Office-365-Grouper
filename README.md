@@ -27,6 +27,16 @@ The required columns for this utility to work are the following and much proceed
 
 "Identity","User","Access Rights","Name","Alias","Office"
 
+<b>Script to grab the data from Exchange onpremise</b>
+
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn;
+Set-AdServerSettings -ViewEntireForest $true
+$mailboxes = Get-Mailbox -ResultSize Unlimited
+foreach ($mailbox in $mailboxes) 
+ { 
+ $mailbox | Get-MailboxPermission | where {$_.user.tostring() -ne "NT AUTHORITYSELF" -and $_.IsInherited -eq $false} | Select @{Name='Identity';Expression={[string]::join(', ', $mailbox.Alias )}},User,@{Name='Access Rights';Expression={[string]::join(', ', $_.AccessRights )}},@{Name='Name';Expression={[string]::join(', ', $mailbox.Name )}},@{Name='Alias';Expression={[string]::join(', ', $mailbox.Alias )}},@{Name='Office';Expression={[string]::join(', ', $mailbox.Office )}} | Export-Csv -NoTypeInformation c:\csvexport.csv
+ }
+ 
 <b>Changes in this version:</b>
 
 -Fixed issue where duplicates would be included in a migration batch.
