@@ -71,4 +71,4 @@ foreach ($mailbox in $mailboxes)
 
 If you have any other questions or request for updates, let me know and i will try my best to accomodate.
 
-JadedDeveloper
+<b>JadedDeveloper</b>
