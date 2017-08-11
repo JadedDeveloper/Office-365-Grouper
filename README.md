@@ -3,7 +3,7 @@
 
 Previously Updated: 7/26/2017
 
-<b>Last Updated: 8/9/2017</b>
+<b>Last Updated: 8/10/2017</b>
 
 Desc: Updated per github user base request for additional functionality.
 
